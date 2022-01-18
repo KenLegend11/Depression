@@ -3,9 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-#fp-nav ul li a span {
-    background: orange;
-}
 /* first-section */
 #main-header{
     position: absolute;
@@ -90,10 +87,11 @@
 
 }
 .icon-container{
-    position: absolute;
-    left: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-size: 40px;
-    bottom: 3%;
     z-index: 99;
     animation: down-up 1s ease infinite;
 }
