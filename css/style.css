@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+#fp-nav ul li a span {
+    background: orange;
+}
 /* first-section */
 #main-header{
     position: absolute;
@@ -17,10 +20,11 @@
     z-index: 1000;
     font-family: 'Noto Serif', serif;;
 }
+
 #main-header h3{
     position: relative;
     font-weight: 700px;
-    color: #fff;
+    color: #aaa;
     text-decoration: none;
     font-size: 2em;
     letter-spacing: 2px;
@@ -42,7 +46,7 @@
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;
+    color: #aaa;
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
@@ -85,6 +89,27 @@
     text-align: center;
 
 }
+.icon-container{
+    position: absolute;
+    left: 50%;
+    font-size: 40px;
+    bottom: 3%;
+    z-index: 99;
+    animation: down-up 1s ease infinite;
+}
+@keyframes down-up{
+    0%{
+        transform: translateY(20px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+
 /* second-section */
 #wi{
     background: #eee;
@@ -174,7 +199,7 @@
     text-align: center;
     padding: 30px 50px;
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-top: 80px;
     font-family: 'Noto Serif', serif;;
 }
 .flex-ha{
@@ -284,13 +309,14 @@
 
 }
 .social .icons{
-    margin: 20px 40px;
+    margin: 5px 40px;
 
 }
 #main-footer h2{
     text-align: center;
     padding: 30px 50px;
     font-size: 50px;
+    margin-top: 80px;
     margin-bottom: 20px;
     font-family: 'Noto Serif', serif;;
     color: #eee;
@@ -298,7 +324,6 @@
 i{
     color: #eee;
     margin: 0px 40px;
-    padding: 10px;
     font-size: 30px;
     transition: 0.6s;
 }
@@ -308,8 +333,12 @@ i{
 }
 .social p{
     font-family: 'Titillium Web', sans-serif;
-    font-size: 21;
+    font-size: 15;
 }
 .opacity{
+    opacity: 0;
+}
+.list{
+    list-style: none;
     opacity: 0;
 }
